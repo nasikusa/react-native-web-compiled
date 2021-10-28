@@ -19,7 +19,9 @@ var defaultProps = {
   suppressHydrationWarning: true,
   testID: true,
   // className の props を許可するように変更
-  className: true
+  className: true,
+  // CSS in JS ライブラリが使用する css props を許可する
+  css: true
 };
 exports.defaultProps = defaultProps;
 var accessibilityProps = {

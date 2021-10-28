@@ -16,6 +16,8 @@ export const defaultProps = {
   testID: true,
   // className の props を許可するように変更
   className: true,
+  // CSS in JS ライブラリが使用する css props を許可する
+  css: true,
 };
 
 export const accessibilityProps = {

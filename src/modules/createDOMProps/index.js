@@ -398,6 +398,11 @@ const createDOMProps = (elementType, props) => {
     domProps.className = props.className ? `${props.className} ${className}` : className;
   }
 
+  // CSS in JS ライブラリの StyledComponents や Emotion が使用するための css props を使用可能にするための変更
+  if (props.css) {
+    domProps.css = props.css;
+  }
+
   if (style) {
     domProps.style = style;
   }

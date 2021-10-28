@@ -418,6 +418,11 @@ var createDOMProps = function createDOMProps(elementType, props) {
     // の issue の通り、 v0.11 にて削除されたため、こちらを元に戻しています
     // v0.10 に関しては、こちらを参照してください ( https://github.com/necolas/react-native-web/releases/tag/0.10.0 )
     domProps.className = props.className ? props.className + " " + className : className;
+  } // CSS in JS ライブラリの StyledComponents や Emotion が使用するための css props を使用可能にするための変更
+
+
+  if (props.css) {
+    domProps.css = props.css;
   }
 
   if (style) {
