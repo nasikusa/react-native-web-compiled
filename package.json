@@ -2,7 +2,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "name": "react-native-web-compiled",
+  "name": "react-native-web",
   "version": "0.17.5",
   "description": "React Native for Web",
   "module": "dist/index.js",
